@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #15202b;
+}
+header{
+    width: 70%;
+    background-color: #15181c;
+    height: 50px;
+    border-bottom-right-radius: 60px;
+    border: solid rgb(255, 255, 255) 1px;
+    border-top: 0px;
+    border-left: 0px;
+    font-size: 0.9em;
+    font-family: 'Candal', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+    width: auto;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding-top: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    
+}
+main{
+    margin-bottom: 100px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.recherche{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divInput{
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+.rechercheInput{
+    width: 90%;
+    height: 80%;
+    border-radius: 15px;
+    background-color: #15181c;
+    color: white;
+}
+.hashtag{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: row;
+   margin-bottom: 50px;
+   background-color:#15202b;
+   height: 50px;
+}
+.hashtag div{
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: solid white 1px;
+    width: 10%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #15181c;
+}
+
+.sondages{
+    color: white;
+    background-color: #15181c;
+    height: 254px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    border: solid rgb(255, 255, 255) 1px;
+    flex-direction: column;
+    transition: 1.5s;
+}
+.sondages:hover{
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+img{
+    width: 170px;
+    height: 165px;
+    border-radius: 17px;
+}
+.divsondages{
+    display: flex;
+    margin-bottom: 45px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer{
+    border-top: solid white 1px;
+    background-color: #15181c;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+/*/////////////// SONDAGES //////////////////////////////*/
+
+.formulaire{
+    color: white;
+    display: flex;
+    justify-content: center;
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 15px;
+    background-color: #15181c
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form *{
+    margin-bottom: 5px;
+}
+select,  textarea, button, input{
+    background-color: #15202b;
+    color: white;
+    border-radius: 20px;
+}
+.check{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: solid 1px;
+    padding-top: 5px;
+    background-color: #15202b;
+}
+.check div input{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+button{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+/*CLASSEMENTS ////////////////////////*/
+.classementPerso{
+    display: flex;
+    flex-direction: column;
+    border: solid white 1px;
+    margin: auto;
+    margin-top: 50px;
+    width: 60%;
+    padding-bottom: 25px;
+    background-color: #15181c;
+    
+}
+table{
+    border-radius: 20px;
+}
+.classementSond{
+    display: flex;
+    flex-direction: column;
+    border: solid white 1px;
+    width: 35%;
+    padding-bottom: 6px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #15181c;
+}
+.mainClassement{
+    display: flex;
+}
+tr{
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+}
+td{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+th{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+/*ENVOI SONDAGE ////////////////////*/
+.envoiSond{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+}
+
