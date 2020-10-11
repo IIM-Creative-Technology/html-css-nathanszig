@@ -122,7 +122,23 @@ footer{
     font-family: 'Open Sans', sans-serif;
 }
 /*/////////////// SONDAGES //////////////////////////////*/
-
+#user{
+    color: white;
+    display: flex;
+    justify-content: center;
+    border: solid rgb(255, 255, 255) 1px;
+    border-bottom-right-radius: 20px;
+    background-color: #15181c;
+    width: 20%;
+    border-top: 0px;
+    border-left: 0px;
+    display: none;
+}
+.bonjour{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
 .formulaire{
     color: white;
     display: flex;
@@ -133,7 +149,15 @@ footer{
     margin: auto;
     margin-top: 50px;
     padding-top: 15px;
-    background-color: #15181c
+    background-color: #15181c;
+    flex-direction: column;
+    transition: 1.5s;
+    margin-top: 150px;
+}
+label{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
 }
 form{
     display: flex;
@@ -147,6 +171,10 @@ select,  textarea, button, input{
     background-color: #15202b;
     color: white;
     border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 .check{
     display: flex;
@@ -165,6 +193,25 @@ button{
     margin: auto;
     margin-bottom: 25px;
     margin-top: 25px;
+}
+.question0{
+    display: block;
+}
+.question1{
+    display: none;
+}
+.question2{
+    display: none;
+}
+.question3{
+    display: none;
+}
+#fin{
+    display: none;
+}
+.final{
+    display: flex;
+    justify-content: center;
 }
 /*CLASSEMENTS ////////////////////////*/
 .classementPerso{

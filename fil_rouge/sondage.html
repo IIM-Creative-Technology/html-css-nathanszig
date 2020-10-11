@@ -6,6 +6,7 @@
     <title>Sondages</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Candal&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="js/jquery.js"></script>
 </head>
 <body>
     <header>
@@ -17,32 +18,49 @@
         </ul>
     </header>
     <main>
-        <div class="formulaire">
-            <form action="">
-                <label for="email">Email</label>
-                <input type="email">
-                <label for="question">Quelle console allez-vous acheter dans la next-gen ?</label>
-                <select name="consoles" id="">
-                    <option value="">PS5 avec lecteur CD</option>
-                    <option value="">PS5 Digital Edition</option>
-                    <option value="">XBox Série X</option>
-                    <option value="">XBox Série S</option>
-                </select>
-                <label for="texte">Pourquoi ?</label>
-                <textarea name="texte" cols="30" rows="10"></textarea>
-                <label for="avis">Que pensez-vous de la proposition des consoles digital ?</label>
-                <div class="check">
-                <div><input type="checkbox" name="" id="">C'est une super idée !</div>
-                <div><input type="checkbox" name="" id="">C'est bien d'avoir le choix.</div>
-                <div><input type="checkbox" name="" id="">Je préfère les versions matérielles.</div>
-                <div><input type="checkbox" name="" id="">Je suis contre les digital edition.</div>
-                </div>
-                <button formaction="envoiSond.html">Envoyer les réponses</button>
-            </form>
+        <div id="user"></div>
+        <div class="formulaire question0">
+            <label for="name">Entrez votre nom d'utilisateur</label>
+            <input type="text" id="username" name="input" value="">
+            <button class="valid" onclick="affichage() , nom()">Valider</button>
+        </div>
+        <div class="formulaire question1">
+            <label for="name">Quel console s'est vendu avec le plus d'exemplaire ?</label>
+            <select name="" id="reponse1">
+                <option value="0" >WII U</option>
+                <option value="0" >Xbox One</option>
+                <option value="1" >PS4</option>
+                <option value="0">Nintendo Switch</option>
+            </select>
+            <button class="valid" onclick="affichage() , compteur()">Valider</button>
+        </div>
+        <div class="formulaire question2">
+            <label for="name">Quel console est sortie en dernière ?</label>
+            <select name="" id="reponse2">
+                <option value="0" >WII U</option>
+                <option value="0" >Xbox One</option>
+                <option value="0" >PS4</option>
+                <option value="1" >Nintendo Switch</option>
+            </select>
+            <button class="valid" onclick="affichage() , compteur()">Valider</button>
+        </div>
+        <div class="formulaire question3">
+            <label for="name">Quel console s'est le moins vendu ?</label>
+            <select name="" id="reponse3">
+                <option value="1" >WII U</option>
+                <option value="0" >Xbox One</option>
+                <option value="0" >PS4</option>
+                <option value="0" >Nintendo Switch</option>
+            </select>
+            <button class="valid" onclick=" compteur(), score()">Valider</button>
+        </div>
+        <div class="formulaire" id="fin">
+
         </div>
     </main>
     <footer>
         <p>Développé et designé par Nathan Szigeti - Projet Sondage IIM A2</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
